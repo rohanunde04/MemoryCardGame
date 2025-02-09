@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Playfair+Display:wght@600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Modern and stylish font */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #043647; /* Dark Blue-Green */
+    color: #b3c9de; /* Light Blue */
     margin: 0;
+    font-size: 1.2em; /* Slightly smaller default font size */
 }
 
 .game-container {
@@ -13,27 +17,31 @@ body {
 }
 
 .game-info {
-    margin-bottom: 20px;
-    font-size: 1.2em;
+    color: #ff5733; /* Vibrant Orange */
+    font-size: 1.5em; /* Slightly smaller than before */
+    font-weight: bold;
+    font-family: 'Playfair Display', serif; /* Elegant font */
 }
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(4, 100px);
-    gap: 10px;
+    grid-template-columns: repeat(4, 90px); /* Reduced card size */
+    grid-template-rows: repeat(4, 90px);
+    gap: 8px;
     justify-content: center;
 }
 
 .card {
-    width: 100px;
-    height: 100px;
+    width: 90px; /* Slightly smaller */
+    height: 90px;
     background-color: #fff;
     border: 2px solid #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 2em; /* Smaller text on cards */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -42,8 +50,19 @@ body {
 }
 
 button {
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 1.1em; /* Slightly smaller */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: #ff5733; /* Orange */
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e64a2e; /* Darker orange on hover */
 }
